@@ -5,5 +5,4 @@ gem 'rake'
 # Add your dependencies here:
 #
 
-gem "bubble-wrap"
-gem "motion-layout"
+gem "formotion"

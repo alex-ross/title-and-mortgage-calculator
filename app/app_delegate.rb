@@ -2,14 +2,16 @@ class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
     @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
 
-    @percentageCalculatorController = PercentageCalculatorController.alloc
-      .initWithNibName(nil, bundle: nil)
-    @navigationController = UINavigationController.alloc
-      .initWithRootViewController(@percentageCalculatorController)
+    @percentage_controller = PercentageCalculatorController.alloc
+      .initWithDefaultForm
+    @navigation_controller = UINavigationController.alloc
+      .initWithRootViewController(@percentage_controller)
 
-    @window.rootViewController = @navigationController
+
+    @window.rootViewController = @navigation_controller
     @window.makeKeyAndVisible
 
     true
   end
+
 end
