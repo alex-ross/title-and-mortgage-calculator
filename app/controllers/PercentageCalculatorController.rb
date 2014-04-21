@@ -3,7 +3,7 @@ class PercentageCalculatorController < Formotion::FormController
   def viewDidLoad
     super
 
-    self.title = "Räkna"
+    self.title = "Kalkyl"
 
     self.navigationItem.rightBarButtonItem = UIBarButtonItem.alloc
       .initWithBarButtonSystemItem UIBarButtonSystemItemDone, target: self,
