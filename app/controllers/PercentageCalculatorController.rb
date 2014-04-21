@@ -5,9 +5,13 @@ class PercentageCalculatorController < Formotion::FormController
 
     self.title = "Kalkyl"
 
-    self.navigationItem.rightBarButtonItem = UIBarButtonItem.alloc
-      .initWithBarButtonSystemItem UIBarButtonSystemItemDone, target: self,
-                                                              action: 'submit'
+    bar_item = UIBarButtonItem.alloc
+      .initWithTitle "Räkna", style: UIBarButtonItemStyleBordered,
+                              target: self,
+                              action: 'submit'
+
+
+    self.navigationItem.rightBarButtonItem = bar_item
   end
 
   def initWithDefaultForm
