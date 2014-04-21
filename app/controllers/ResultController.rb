@@ -3,6 +3,8 @@ class ResultController < Formotion::FormController
 
   def viewDidLoad
     super
+
+    self.title = "Resultat"
   end
 
   def initWithCalculation(calculation)
